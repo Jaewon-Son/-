@@ -11,13 +11,13 @@
   
   .thumbnail-block {
     width: 200px;
-    text-decoration: none;
+    text-decoration: none; /*밑줄 제거*/
     color: black;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /*부드러운 전환(0.3초간 서서히 움직임)*/
   }
   
   .thumbnail-block:hover {
-    transform: scale(1.15);
+    transform: scale(1.15); /*마우스 오버시 확대비율*/
   }
   
   .thumbnail-image {
