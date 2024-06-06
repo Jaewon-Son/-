@@ -1,0 +1,35 @@
+.main-container {
+    text-align: center;
+  }
+  
+  .thumbnail-container {
+    display: flex; /*가운데로 모으기*/
+    justify-content: center; /*가운데 정렬*/
+    flex-wrap: wrap; /*자동 줄바꿈*/
+    gap: 30px;
+  }
+  
+  .thumbnail-block {
+    width: 200px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s;
+  }
+  
+  .thumbnail-block:hover {
+    transform: scale(1.15);
+  }
+  
+  .thumbnail-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 50px;
+  }
+  
+  .thumbnail-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
