@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main.js";
 import Page1 from "./pages/Page1.js";
