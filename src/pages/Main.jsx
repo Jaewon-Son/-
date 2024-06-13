@@ -9,7 +9,7 @@ import './Main.css'; // CSS 파일을 불러옵니다.
 function Main() {
   return (
     <div className="main-container">
-      <h1>메인화면입니다.</h1>
+      <h1>노인인지치료 퀴즈 (3팀)</h1>
       <div className="thumbnail-container">
         <Link to="/LeeQuiz/TimerPage" className="thumbnail-block">
           <img src={img1} alt="Lee" className="thumbnail-image" />
