@@ -1,10 +1,12 @@
 .question-container{
+  margin: 0 auto;
   display: flex;
   background-color: beige;
   border-radius: 3px;
   padding: 20px;
   border: 2px solid yellowgreen;
-  
+  width: 40%;
+  font-size: 20px;
 }
 
 .tables-container {
@@ -38,4 +40,6 @@
     font-weight: bold;
   }
   
-  
+  .title{
+    text-align: center;
+  }

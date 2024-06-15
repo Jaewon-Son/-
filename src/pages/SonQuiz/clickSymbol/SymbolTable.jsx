@@ -121,42 +121,44 @@ const SymbolTable = () => {
 
   return (
     <>
-      <h1>아래를 참고하여 문제를 풀어보세요</h1>
-      <div className="question-container">
-        ▶가로 4칸, 세로 4칸으로 된 정사각형이 있습니다.
-        <br />
-        ▶제시된 기호를 참고하여 가로, 세로 줄에 각 기호가 중복되지 않도록
-        <br />
-        빈칸에 기호를 그려보세요.
-        <br />
-        ▶빈칸을 클릭하면 기호가 바뀝니다.
-        <br />
-        ▶새로고침시 새로운 문제를 풀 수 있습니다.
-      </div>
-      <div className="tables-container">
-        {tables.map((row, rowIndex) => (
-          <div key={rowIndex} className="tables-row">
-            {row.map((cell, colIndex) => (
-              <div
-                key={colIndex}
-                className={`tables-cell ${
-                  !isEmpty[rowIndex][colIndex] ? "prev" : ""
-                }`}
-                onClick={() => handleCellClick(rowIndex, colIndex)}
-                style={{
-                  cursor: isEmpty[rowIndex][colIndex] ? "pointer" : "default",
-                }}
-              >
-                {cell}
-              </div>
-            ))}
-          </div>
-        ))}
-        {isAnswer && <div className="answer-text">정답입니다!!</div>}
-        <button onClick={handleToMain} className="next-quiz-button">
-          메인 페이지로
-        </button>
-      </div>
+      <div className="title">
+        <h1>아래를 참고하여 문제를 풀어보세요</h1>
+        </div>
+        <div className="question-container">
+          ▶가로 4칸, 세로 4칸으로 된 정사각형이 있습니다.
+          <br />
+          ▶제시된 기호를 참고하여 가로, 세로 줄에 각 기호가 중복되지 않도록
+          <br />
+          빈칸에 기호를 그려보세요.
+          <br />
+          ▶빈칸을 클릭하면 기호가 바뀝니다.
+          <br />
+          ▶새로고침시 새로운 문제를 풀 수 있습니다.
+        </div>
+        <div className="tables-container">
+          {tables.map((row, rowIndex) => (
+            <div key={rowIndex} className="tables-row">
+              {row.map((cell, colIndex) => (
+                <div
+                  key={colIndex}
+                  className={`tables-cell ${
+                    !isEmpty[rowIndex][colIndex] ? "prev" : ""
+                  }`}
+                  onClick={() => handleCellClick(rowIndex, colIndex)}
+                  style={{
+                    cursor: isEmpty[rowIndex][colIndex] ? "pointer" : "default",
+                  }}
+                >
+                  {cell}
+                </div>
+              ))}
+            </div>
+          ))}
+          {isAnswer && <div className="answer-text">정답입니다!!</div>}
+          <button onClick={handleToMain} className="next-quiz-button">
+            메인 페이지로
+          </button>
+        </div>
     </>
   );
 };
