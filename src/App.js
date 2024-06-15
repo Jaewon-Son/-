@@ -8,6 +8,9 @@ import WellQuizPage from "./pages/LeeQuiz/WellQuizPage.js";
 import Q11 from "./pages/ParkQuiz/Q11.jsx"
 import Q12 from "./pages/ParkQuiz/Q12.jsx"
 import Q14 from "./pages/ParkQuiz/Q14.jsx"
+import Thumbnail from "./pages/SonQuiz/Thumbnail.jsx";
+import Table from "./pages/SonQuiz/drawing/Table.jsx";
+import SymbolTable from "./pages/SonQuiz/clickSymbol/SymbolTable.jsx";
 function App() {
   return (
     <Routes>
@@ -19,6 +22,9 @@ function App() {
       <Route path="/ParkQuiz/Q11" element={<Q11 />} />
       <Route path="/ParkQuiz/Q12" element={<Q12 />} />
       <Route path="/ParkQuiz/Q14" element={<Q14 />} />
+      <Route path="/SonQuiz/Thumbnail" element={<Thumbnail/>}/>
+      <Route path="/SonQuiz/drawing/Table" element={<Table/>}/>
+      <Route path="/SonQuiz/clickSymbol/SymbolTable" element={<SymbolTable/>}/>
     </Routes>
   );
 }

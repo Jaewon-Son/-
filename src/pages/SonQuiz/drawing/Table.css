@@ -1,0 +1,70 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -50px;
+    position: relative;
+  }
+  
+  .table {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    border: 1px solid gray;
+    margin: 0 5px;
+    position: relative;
+  }
+  
+  .cell {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(191, 189, 189);
+    box-sizing: border-box;
+  }
+  
+  .point {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(191, 189, 189);
+    cursor: pointer;
+  }
+  
+  .top-left {
+    top: -2.5px;
+    left: -2.5px;
+  }
+  
+  .top-right {
+    top: -2.5px;
+    right: -2.5px;
+  }
+  
+  .bottom-left {
+    bottom: -2.5px;
+    left: -2.5px;
+  }
+  
+  .bottom-right {
+    bottom: -2.5px;
+    right: -2.5px;
+  }
+  
+  .result {
+    margin-top: -40px;
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+  }
+  .container{
+    text-align: center;
+  }
+  .dotted-line{
+    width: 300px;
+    rotate: 90deg;
+    color: black;
+    border-style: dotted;
+  }
+  
