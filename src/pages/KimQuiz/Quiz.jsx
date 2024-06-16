@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import img1 from "../kimImage/1.png";
-import img2 from "../kimImage/2.png";
-import img3 from "../kimImage/3.png";
-import img4 from "../kimImage/4.png";
-import img5 from "../kimImage/5.png";
-import img6 from "../kimImage/6.png";
-import img7 from "../kimImage/7.png";
-import img8 from "../kimImage/8.png";
-import img9 from "../kimImage/9.png";
+import { useNavigate } from 'react-router-dom';
+import img1 from "./KimImage/1.png";
+import img2 from "./KimImage/2.png";
+import img3 from "./KimImage/3.png";
+import img4 from "./KimImage/4.png";
+import img5 from "./KimImage/5.png";
+import img6 from "./KimImage/6.png";
+import img7 from "./KimImage/7.png";
+import img8 from "./KimImage/8.png";
+import img9 from "./KimImage/9.png";
 
 const correctAnswers = [
   "나비",
@@ -63,7 +64,10 @@ const Quiz = () => {
       setUserInputs(Array(8).fill(""));
     }
   };
-
+  const navigate = useNavigate();
+  const handleNextQuiz = () => {
+    navigate('/KimQuiz/Rotation');
+  };
   const styles = {
     appContainer: {
       display: "flex",
@@ -110,6 +114,7 @@ const Quiz = () => {
       marginTop: 10,
     },
     button: {
+      display: "block",
       fontSize: 10,
       cursor: "pointer",
       width: 50,
@@ -178,6 +183,8 @@ const Quiz = () => {
           <button type="submit" style={styles.button}>
             제출
           </button>
+          <br/>
+          <button onClick={handleNextQuiz} className="next-quiz-button">다음 문제 풀기</button>
         </div>
       </form>
       <p style={styles.message}>{message}</p>

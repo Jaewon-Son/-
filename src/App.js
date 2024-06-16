@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main.jsx";
-import Rotation from "./pages/KimQuiz/Rotation.jsx"
 import TimerPage from "./pages/LeeQuiz/TimerPage.js";
 import QuizPage from "./pages/LeeQuiz/QuizPage.js";
 import WellQuizPage from "./pages/LeeQuiz/WellQuizPage.js";
@@ -11,6 +10,8 @@ import Q14 from "./pages/ParkQuiz/Q14.jsx"
 import Thumbnail from "./pages/SonQuiz/Thumbnail.jsx";
 import Table from "./pages/SonQuiz/drawing/Table.jsx";
 import SymbolTable from "./pages/SonQuiz/clickSymbol/SymbolTable.jsx";
+import Quiz from "./pages/KimQuiz/Quiz.jsx";
+import Rotation from "./pages/KimQuiz/Rotation.jsx"
 function App() {
   return (
     <Routes>
@@ -18,6 +19,7 @@ function App() {
       <Route path="/LeeQuiz/TimerPage" element={<TimerPage />} />
       <Route path="/LeeQuiz/QuizPage" element={<QuizPage />} />
       <Route path="/LeeQuiz/WellQuizPage" element={<WellQuizPage />} />
+      <Route path="/KimQuiz/Quiz" element={<Quiz />} />
       <Route path="/KimQuiz/Rotation" element={<Rotation />} />
       <Route path="/ParkQuiz/Q11" element={<Q11 />} />
       <Route path="/ParkQuiz/Q12" element={<Q12 />} />

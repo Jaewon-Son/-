@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import SubmitButton from './SubmitButton';
 import './QuizPage.css';
 
-// 이미지 임포트
+
 import andreKim from './images/앙드레김.jpg';
 import choiKyuHa from './images/최규하.jpg';
 import pattyKim from './images/패티김.jpg';
 import songHae from './images/송해.jpg';
 import kimHyeJa from './images/김혜자.jpg';
 
-// 정답 데이터 설정
+
 const answers = [
   { imgSrc: choiKyuHa, job: '대통령', name: '최규하', feature: '대한민국 제10대 대통령', hint: '역대 최단기간 재임 1979.12 ~ 1980.08' },
   { imgSrc: pattyKim, job: '가수', name: '패티김', feature: '이별, 서울의 찬가 대표곡', hint: '' },

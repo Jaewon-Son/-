@@ -3,21 +3,21 @@
   }
   
   .thumbnail-container {
-    display: flex; /*가운데로 모으기*/
-    justify-content: center; /*가운데 정렬*/
-    flex-wrap: wrap; /*자동 줄바꿈*/
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
   }
   
   .thumbnail-block {
     width: 250px;
-    text-decoration: none; /*밑줄 제거*/
+    text-decoration: none;
     color: black;
-    transition: transform 0.3s; /*부드러운 전환(0.3초간 서서히 움직임)*/
+    transition: transform 0.3s;
   }
   
   .thumbnail-block:hover {
-    transform: scale(1.15); /*마우스 오버시 확대비율*/
+    transform: scale(1.15);
   }
   
   .thumbnail-image {
